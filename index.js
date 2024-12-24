@@ -1,3 +1,6 @@
+document.querySelector("button").addEventListener("click", rollit);
+
+function rollit(){
 var random_1=Math.floor(Math.random()*6)+1;
 var random_dice_1 = ("./diceimg/dice"+random_1+".png");
 var random_dice_img1=document.querySelectorAll("img")[0];
@@ -21,4 +24,5 @@ else if(random_1<random_2)
 else
 {
     document.querySelector("h1").innerHTML="<u>Draw</u>!!"
+}
 }
